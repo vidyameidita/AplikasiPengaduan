@@ -1,17 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <TextView
+    <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pilih Kategori Pengaduan"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="15dp"
-            android:textAlignment="center"/>
+            android:layout_height="match_parent">
 
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Jenis Pengaduan"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"/>
+
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_option"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:spinnerMode="dropdown"
+                    android:padding="20dp">
+
+            </Spinner>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Kategori Pengaduan"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:textAlignment="center"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:id="@+id/searchView"
+                    android:layout_margin="40dp"
+                    android:iconifiedByDefault="false"
+                    android:background="@drawable/custom_background">
+
+
+            </EditText>
+
+            <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/listView"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"></ListView>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ketik Laporan Anda"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"/>
+
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/edit_text"
+                    android:layout_margin="40dp"
+                    android:iconifiedByDefault="false"
+                    android:background="@drawable/custom_background">
+
+
+            </EditText>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Gambar (jika ada)"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"/>
+
+            <ImageView
+                    android:id="@+id/iv_add_img"
+                    android:layout_width="320dp"
+                    android:layout_height="180dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_add_img"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pengaduan Via Telefon"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dial_number"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"
+                    android:id="@+id/text_dial_number"/>
+
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">AplikasiPengaduan</string>
+    <string name="pengaduan_lewat_telepon">Pengaduan Lewat Telepon</string>
+
+    <string-array name="jenis_pengaduan">
+        <item>Klik untuk Pilih</item>
+        <item>Kritik</item>
+        <item>Saran</item>
+        <item>Pelanggaran</item>
+        <item>Perizinan</item>
+        <item>Pertanyaan</item>
+        <item>Pengaduan</item>
+    </string-array>
+
+    <string name="dial_number">083848711039</string>
+    <string name="Username">vidya</string>
+    <string name="Password">vidya</string>
+    <!--<string name="send">KIRIM</string>-->
 </resources>

@@ -5,4 +5,18 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_margin="16dp"
+            android:text="TIKET LAPORAN ANDA"
+            android:gravity="center_horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_listTiket"
+        android:layout_margin="16dp"/>
+
 </LinearLayout>
